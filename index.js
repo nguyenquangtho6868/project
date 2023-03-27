@@ -24,7 +24,7 @@ app.use(
     origin: [
       process.env.URLREACT,
       "https://reactadmin-o7xz5wit7-nguyenquangtho6868.vercel.app/*",
-      "https://reactadmin-one.vercel.app/",
+      "https://reactadmin-one.vercel.app/*",
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:3002",
@@ -32,7 +32,7 @@ app.use(
       "http://localhost:3004",
       "http://localhost:3005",
     ],
-    methods: ["POST", "PUT", "GET", "DELETE"],
+    methods: ["POST", "PUT", "GET", "HEAD", "OPTION", "DELETE"],
     credentials: true,
   })
 );
