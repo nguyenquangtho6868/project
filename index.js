@@ -32,7 +32,7 @@ app.use(
       "http://localhost:3004",
       "http://localhost:3005",
     ],
-    methods: ["POST", "PUT", "GET", "OPTIONS", "HEAD", "DELETE"],
+    methods: ["POST", "PUT", "GET", "DELETE"],
     credentials: true,
   })
 );
