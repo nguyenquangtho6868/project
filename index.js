@@ -22,6 +22,7 @@ mongoose
 app.use(
   cors({
     origin: [
+      process.env.URLREACT,
       "https://reactadmin-o7xz5wit7-nguyenquangtho6868.vercel.app/",
       "https://reactadmin-one.vercel.app/",
       "http://localhost:3000",
