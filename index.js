@@ -19,25 +19,25 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-app.use(
-  cors({
-    origin: [
-      process.env.URLREACT,
-      process.env.URLCLIENT,
-      "https://reactclient.vercel.app/",
-      "https://reactadmin-one.vercel.app/*",
-
-      "http://localhost:3000",
-      "http://localhost:3001",
-      "http://localhost:3002",
-      "http://localhost:3003",
-      "http://localhost:3004",
-      "http://localhost:3005",
-    ],
-    methods: ["POST", "PUT", "GET", "HEAD", "OPTION", "DELETE"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       process.env.URLREACT,
+//       process.env.URLCLIENT,
+//       "https://reactclient.vercel.app/",
+//       "https://reactadmin-one.vercel.app/*",
+//       "http://localhost:3000",
+//       "http://localhost:3001",
+//       "http://localhost:3002",
+//       "http://localhost:3003",
+//       "http://localhost:3004",
+//       "http://localhost:3005",
+//     ],
+//     methods: ["POST", "PUT", "GET", "HEAD", "OPTION", "DELETE"],
+//     credentials: true,
+//   })
+// );
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 //API
