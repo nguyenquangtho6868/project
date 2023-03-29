@@ -24,7 +24,7 @@ app.use(
     origin: [
       process.env.URLREACT,
       process.env.URLCLIENT,
-      "https://reactclient.vercel.app/*",
+      "https://reactclient.vercel.app/",
       "https://reactadmin-one.vercel.app/*",
 
       "http://localhost:3000",
